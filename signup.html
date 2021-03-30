@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册 - </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/regAcc.css"/>
+    <link rel="icon" href="graph/icon.png"/>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/md5.js"></script>
+    <style>
+        body
+        {
+       background: url('graph/Login_background.jpg') no-repeat center center fixed;
+       background-size: cover; 
+        }
+   </style>
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span class="icon-cloud"></span>管理员系统</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li><a id="qrcode_nav" href="#">关于我们</a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+</div><!--导航栏结束-->
+<div id="head-div">
+    <a href="index.html"><span class="icon-home" style="font-size: xx-large"></span></a>
+</div>
+<h4>填写信息,注册为管理员</h4>
+<div id="form-reg" ng-app="myApp">
+    <form id="form1" ng-controller="samePass">
+        <p>
+        <div id="div-user_name" class="input-group">
+            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="user_name" required id="user_name" type="text" class="form-control" placeholder="昵称" onblur="checkusername()" oninput="checkusername()">
+        </div>
+        <span id="sameUsername" style="color: green;visibility: visible">* 用户名6-16位可以使用特殊字符</span>
+        <span id="s1">　</span>
+        </p>
+        <p>
+        <div id="div-email_address" class="input-group">
+            <span class="input-group-addon"><i class="icon-envelope"></i></span>
+            <input name="email_address" id="email_address" class="form-control" type="text" placeholder="邮箱地址" onblur="checkemail()" oninput="checkemail()">
+        </div>
+        <span id="s3"  >　</span>
+        </p>
+       
+        <div id="div-password" class="input-group">
+            <span class="input-group-addon"><i class="icon-key"></i></span>
+            <input name="password" id="password" class="form-control" ng-model="pass" type="password" placeholder="设置密码" onblur="checkpassword()" oninput="checkpassword()">
+        </div>
+        <span id="s2">　</span>
+        <p>
+        <div id="div-password-again" class="input-group">
+            <span class="input-group-addon"><i class="icon-key"></i></span>
+            <input id="password-again" class="form-control" ng-model="passA" type="password" placeholder="再次输入密码"  onblur="checksamepassword()" oninput="checksamepassword()">
+        </div>
+        <span id="s4"></span>
+        </p>
+        <a id="login_to" class="btn btn-block btn-success">
+            <i class="glyphicon glyphicon-log-in"></i> 注 册</a>
+    </form>
+</div>
+<div id="qrCode">
+    <img src="graph/wxqrcode.png" class="img-responsive"/>
+</div>
+<div id="foot-div">
+    <div>
+        郭子杨 08173042 计科17-06
+    </div>
+</div>
+<script src="js/regAcc.js"></script>
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("samePass", function ($scope) {});
+    /* 动画显示QR */
+    $(function() {
+        $("#qrcode_nav").hover(function() {
+            $("#qrCode").show(30);
+        }, function() {
+            $("#qrCode").hide(30);
+        });
+       
+    });
+
+</script>
+</body>
+</html>
