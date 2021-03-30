@@ -1,0 +1,153 @@
+@media screen and (max-width: 640px) {
+
+header {
+width:100%;
+margin-bottom: 0px;
+}
+header img {
+width:100%;
+}
+article {
+width:100vw;
+margin:0 auto 5vw;
+overflow: hidden;
+}
+article section:nth-of-type(1) {
+width: 96vw;
+margin:0 auto 20px;
+display: block;
+justify-content: space-between;
+}
+article section:nth-of-type(2) {
+width: 96vw;
+margin:0 auto 20px;
+}
+article section:nth-of-type(3) {
+width: 96vw;
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+section ul li a{ width: 75%;
+font-size: 14px;
+margin: 0 0 0 10px;
+
+overflow: hidden;
+display: block;
+float: left;}
+#yqfk {
+margin-bottom:0;
+height: 265px;
+overflow: hidden;
+}
+#yqfk .column::after {
+width: 70%;
+}
+#yqfk dl {
+height:100px;
+}
+.column::after {
+width: 70%;
+}
+.i_list {
+margin: 10px auto;
+max-height: 215px;
+overflow: hidden;
+}
+.column span {
+width: 134px;
+height: 27px;
+}
+section ul li::before {
+margin-right: 5px;
+}
+#i_nav {
+height:75px;
+background:#116eaf;
+width:100%;
+margin-bottom:0;
+}
+#i_nav ul {
+width:100%;
+margin: 0 auto;
+}
+#i_nav li {
+float:left;
+width:20%;
+font-size:16px;
+line-height:36px;
+color:#ffffff;
+padding:0;
+text-align:center
+}
+#i_nav li a {
+color:#ffffff
+}
+
+#jdtp {
+width:100vw;
+height: 300px;
+margin:0 0 20px 0;
+}
+#jdtp .swiper-slide {
+height: 300px;
+}
+#jdtp .swiper-slide h2 {
+width: 100%;
+height: 40px;
+}
+#jdtp .swiper-slide h2 a {
+font-size: 16px;
+line-height: 40px;
+}
+#jdtp .swiper-slide img {
+min-height: 100%;
+width:100vw;
+}
+#jdtp .swiper-pagination {
+width: auto;
+left: auto;
+bottom: 12px;
+right: 8px;
+}
+#jdtp .swiper-pagination-bullet {
+margin:0 4px;
+width: 8px;
+height: 8px;
+}
+#zxbd {
+width:96vw;
+margin: 0 auto
+}
+
+.dqwz{ top: 12px !important;}
+#twfylist .column {
+padding: 10px 0;
+}
+#twfylist .column span {
+width:400px
+}
+.lm_list a{width: 72%;}
+.lm_list span{width: 22%;}
+
+#icontent {
+width: 96vw;
+margin:0 auto;
+padding:0
+}
+.c-content {
+margin: 10px auto 40px auto;
+padding: 0 0px;
+}
+.c-content .other-s {
+margin: 5px auto 0 auto;
+}
+.c-content .c-title {
+font-size: 20px;
+color: #cc3333;
+line-height: 34px;
+text-align: center;
+}
+#kpxzs .column span{width:234px;}
+}
